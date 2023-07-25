@@ -2,54 +2,5 @@
     Footer
 ============= */
 footer{
-    background-color: var(--lightGray);
-
-    h2{
-        margin: 24px 0 16px;
-    }
-
-
-    @include md{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: 
-        "fl fr"
-        "fb fb";
-        gap: 16px;
-    }
-
-   
-
-    #footer-left{
-        padding: 16px;
-        @include md{
-            grid-area: fl;
-        }
-    }
-
-    #footer-right{
-        padding: 16px;
-        @include md{
-            grid-area: fr;
-        }
-    }
-
-    #footer-bottom{
-        padding: 24px;
-        background-color: var(--charcoal);
-
-          // love // hate
-        a:link, a:visited{
-            color: var(--white);
-            text-decoration: none;
-        }
-
-        a:hover, a:active{
-            color: var(--green);
-        }
-
-        @include md{
-            grid-area: fb;
-        }
-    }
+  background-color: var(--matcha);
 }

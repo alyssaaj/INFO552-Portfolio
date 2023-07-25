@@ -2,19 +2,17 @@
     Navigation
 ============= */
 
-// dark green / light green link
- // love // hate
- .darkGreenLink:link, .darkGreenLink:visited{
+/* .darkGreenLink:link, .darkGreenLink:visited{
     color: var(--darkGreen);
     text-decoration: none;
     display: inline-block;
 }
 .darkGreenLink:hover, .darkGreenLink:active{
     color: var(--green);
-}
+}*/
 
 
 
 nav{
-    background-color: var(--green);
+    background-color: var(--grass);
 }
