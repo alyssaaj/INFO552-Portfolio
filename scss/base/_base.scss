@@ -21,6 +21,15 @@ body {
 
   }
 }
+
+aside {
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
 #main-content-grid{
   @include lg {
     display: grid;
@@ -40,9 +49,17 @@ body {
 
 #main-content-right{
   background-color: var(--cream);
+  padding: 16px 16px;
+  p {
+    padding-bottom: 8px;
+  }
 
   img{
-    width: 100%;
+    width: 150px;
+  }
+
+  h2 {
+    padding: 8px 0;
   }
 }
 

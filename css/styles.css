@@ -359,6 +359,10 @@ body {
   background-color: var(--white);
 }
 
+aside ul li {
+  list-style: none;
+}
+
 @media (min-width: 1024px) {
   #main-content-grid {
     display: -ms-grid;
@@ -383,9 +387,16 @@ body {
 
 #main-content-right {
   background-color: var(--cream);
+  padding: 16px 16px;
+}
+#main-content-right p {
+  padding-bottom: 8px;
 }
 #main-content-right img {
-  width: 100%;
+  width: 150px;
+}
+#main-content-right h2 {
+  padding: 8px 0;
 }
 
 a:link, a:visited {
@@ -395,6 +406,25 @@ a:link, a:visited {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -424,10 +454,14 @@ textarea {
 nav {
   background: var(--green);
 }
+nav ul li {
+  list-style: none;
+}
 
 .colorLink:link, .colorLink:visited {
   color: var(--cream);
   text-decoration: none;
+  display: inline-block;
 }
 
 .colorLink:hover, .colorLink:active {
@@ -437,11 +471,18 @@ nav {
 /* =============
     Header
 ============= */
+header {
+  padding: 48px 0;
+}
+header p {
+  padding: 8px 0;
+}
+
 /* =============
     Footer
 ============= */
-footer {
-  background-color: var(--darkgreen);
+footer p {
+  padding-bottom: 8px;
 }
 @media (min-width: 768px) {
   footer {
@@ -454,15 +495,25 @@ footer {
     gap: 16px;
   }
 }
+footer #footer-left {
+  background-color: var(--green);
+}
 @media (min-width: 768px) {
   footer #footer-left {
     grid-area: fl;
   }
 }
+footer #footer-right {
+  background-color: var(--green);
+}
 @media (min-width: 768px) {
   footer #footer-right {
     grid-area: fr;
   }
+}
+footer #footer-bottom {
+  background-color: var(--darkgreen);
+  padding: 16px 0;
 }
 @media (min-width: 768px) {
   footer #footer-bottom {
@@ -488,6 +539,22 @@ footer {
 /* =============
     Index
 ============= */
+#index-left {
+  padding: 0 16px;
+}
+#index-left h1 {
+  padding-bottom: 24px;
+}
+#index-left h2 {
+  padding-bottom: 8px;
+}
+#index-left p {
+  padding-bottom: 8px;
+}
+#index-left ul li {
+  margin-left: 32px;
+}
+
 /* =============
     About
 ============= */

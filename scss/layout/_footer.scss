@@ -3,7 +3,9 @@
 ============= */
 
 footer{
-  background-color: var(--darkgreen);
+  p {
+    padding-bottom: 8px;
+  }
 
   @include md {
     display: grid;
@@ -16,6 +18,7 @@ footer{
   }
 
   #footer-left {
+    background-color: var(--green);
     @include md {
       grid-area: fl;
     }
@@ -23,6 +26,7 @@ footer{
   }
 
   #footer-right {
+    background-color: var(--green);
     @include md {
       grid-area: fr;
     }
@@ -30,9 +34,10 @@ footer{
   }
 
   #footer-bottom {
+    background-color: var(--darkgreen);
     @include md {
       grid-area: fb;
     }
-
+    padding: 16px 0;
   }
 }
