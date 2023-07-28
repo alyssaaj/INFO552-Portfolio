@@ -353,6 +353,13 @@ body {
   background-color: var(--white);
 }
 
+#main-content-right {
+  background-color: var(--cream);
+}
+#main-content-right img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -386,12 +393,25 @@ nav {
   background: var(--green);
 }
 
+.colorLink:link, .colorLink:visited {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.colorLink:hover, .colorLink:active {
+  color: var(--gray);
+}
+
 /* =============
     Header
 ============= */
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--darkgreen);
+}
+
 /* =============
     Index
 ============= */

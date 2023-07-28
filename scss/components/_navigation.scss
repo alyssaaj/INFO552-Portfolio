@@ -5,3 +5,11 @@
 nav {
   background: var(--green);
 }
+// link colors
+.colorLink:link, .colorLink:visited {
+  color: var(--cream);
+  text-decoration: none;
+}
+.colorLink:hover, .colorLink:active {
+    color: var(--gray);
+}
