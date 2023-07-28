@@ -13,11 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --sand: #AF9F8C;
-  --grass: #7F867B;
-  --matcha: #C7C7BB;
-  --dustyrose: #D4C8BE;
-  --linen: #E3E4E0;
+  --darkgreen: #5F7161;
+  --green: #6D8B74;
+  --cream: #EFEAD8;
+  --gray: #D0C9C0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -339,11 +338,6 @@ template {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5 {
-  padding: 0;
-  margin: 0;
-}
-
 /* =============
     Buttons
 ============= */
@@ -370,28 +364,12 @@ textarea {
 /* =============
     Navigation
 ============= */
-/* .darkGreenLink:link, .darkGreenLink:visited{
-    color: var(--darkGreen);
-    text-decoration: none;
-    display: inline-block;
-}
-.darkGreenLink:hover, .darkGreenLink:active{
-    color: var(--green);
-}*/
-nav {
-  background-color: var(--grass);
-}
-
 /* =============
     Header
 ============= */
 /* =============
     Footer
 ============= */
-footer {
-  background-color: var(--matcha);
-}
-
 /* =============
     Index
 ============= */
