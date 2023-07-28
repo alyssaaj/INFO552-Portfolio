@@ -3,6 +3,23 @@
 ============= */
 header{
   padding: 48px 0;
+  text-align: center;
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(36);
+    letter-spacing: rem-calc(2);
+    color: var(--darkgreen);
+    a:link, a:visited {
+      color: var(--darkgreen);
+      text-decoration: none;
+    }
+
+    a:hover, a:active {
+        color: var(--darkgreen);
+    }
+  }
+
 
   p {
     padding: 8px 0;

@@ -49,14 +49,27 @@ aside {
 
 #main-content-right{
   background-color: var(--cream);
+  text-align: center;
+
+  #profile-pic{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+
   padding: 16px 16px;
   p {
     padding-bottom: 8px;
   }
 
-  img{
-    width: 150px;
-  }
+  //img{
+    //width: 150px;
+  //}
 
   h2 {
     padding: 8px 0;
