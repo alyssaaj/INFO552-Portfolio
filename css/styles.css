@@ -335,6 +335,24 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--gray);
+}
+
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+.content-grid .content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+  background-color: var(--white);
+}
+
 /* =============
     Typography
 ============= */
@@ -364,6 +382,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  background: var(--green);
+}
+
 /* =============
     Header
 ============= */
@@ -372,4 +394,22 @@ textarea {
 ============= */
 /* =============
     Index
+============= */
+/* =============
+    About
+============= */
+/* =============
+    Site Map
+============= */
+/* =============
+    Site Map
+============= */
+/* =============
+    Projects
+============= */
+/* =============
+    Associations
+============= */
+/* =============
+    Contact
 ============= */
