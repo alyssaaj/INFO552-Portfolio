@@ -11,11 +11,31 @@ body {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
 
+  @include xl {
+    grid-template-columns: auto 1200px auto;
+  }
+
   .content-grid-item {
     grid-area: content;
     background-color: var(--white);
 
   }
+}
+#main-content-grid{
+  @include lg {
+    display: grid;
+    grid-template-columns: 65% auto;
+    gap: 16px;
+  }
+
+  @include xl {
+    grid-template-columns: 70% auto;
+  }
+
+  @include xxl {
+    grid-template-columns: 75% auto;
+  }
+
 }
 
 #main-content-right{
@@ -24,4 +44,8 @@ body {
   img{
     width: 100%;
   }
+}
+
+a:link, a:visited {
+  text-decoration: none;
 }
