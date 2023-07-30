@@ -359,8 +359,8 @@ body {
   background-color: var(--white);
 }
 
-aside ul li {
-  list-style: none;
+a:link, a:visited {
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -388,7 +388,7 @@ aside ul li {
 #main-content-right {
   background-color: var(--cream);
   text-align: center;
-  padding: 16px 16px;
+  padding: 24px 24px;
 }
 #main-content-right #profile-pic {
   margin-left: auto;
@@ -406,9 +406,21 @@ aside ul li {
 #main-content-right h2 {
   padding: 8px 0;
 }
-
-a:link, a:visited {
-  text-decoration: none;
+#main-content-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#main-content-right ul li {
+  margin: 0 16px;
+  font-size: 1.75rem;
+  list-style: none;
+}
+#main-content-right ul li a:link, #main-content-right ul li a:visited {
+  color: var(--black);
 }
 
 /* =============
@@ -484,7 +496,7 @@ nav ul li {
     Header
 ============= */
 header {
-  padding: 48px 0;
+  padding-top: 48px;
   text-align: center;
 }
 header h1 {
@@ -508,6 +520,9 @@ header p {
 /* =============
     Footer
 ============= */
+footer {
+  text-align: center;
+}
 footer p {
   padding-bottom: 8px;
 }
@@ -515,14 +530,13 @@ footer p {
   footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 16px auto;
+    -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
-    -ms-grid-rows: auto 16px auto;
         grid-template-areas: "fl fr" "fb fb";
-    gap: 16px;
   }
 }
 footer #footer-left {
+  padding: 8px 0;
   background-color: var(--green);
 }
 @media (min-width: 768px) {
@@ -531,6 +545,7 @@ footer #footer-left {
   }
 }
 footer #footer-right {
+  padding: 8px 0;
   background-color: var(--green);
 }
 @media (min-width: 768px) {
@@ -554,12 +569,12 @@ footer #footer-bottom {
   }
   footer #footer-right {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
   footer #footer-bottom {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
   }
 }
 
@@ -567,7 +582,7 @@ footer #footer-bottom {
     Index
 ============= */
 #index-left {
-  padding: 0 16px;
+  padding: 16px;
 }
 #index-left h1 {
   padding-bottom: 24px;

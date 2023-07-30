@@ -21,13 +21,8 @@ body {
 
   }
 }
-
-aside {
-  ul {
-    li {
-      list-style: none;
-    }
-  }
+a:link, a:visited {
+  text-decoration: none;
 }
 
 #main-content-grid{
@@ -50,6 +45,7 @@ aside {
 #main-content-right{
   background-color: var(--cream);
   text-align: center;
+  padding: 24px 24px;
 
   #profile-pic{
     margin-left: auto;
@@ -62,7 +58,6 @@ aside {
     border-radius: 100%;
   }
 
-  padding: 16px 16px;
   p {
     padding-bottom: 8px;
   }
@@ -74,8 +69,17 @@ aside {
   h2 {
     padding: 8px 0;
   }
-}
 
-a:link, a:visited {
-  text-decoration: none;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 16px;
+      font-size: rem-calc(28);
+      list-style: none;
+      a:link, a:visited {
+        color: var(--black);
+      }
+    }
+  }
 }

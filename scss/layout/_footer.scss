@@ -3,6 +3,7 @@
 ============= */
 
 footer{
+  text-align: center;
   p {
     padding-bottom: 8px;
   }
@@ -13,11 +14,12 @@ footer{
     grid-template-areas:
     "fl fr"
     "fb fb";
-    gap: 16px;
+    //gap: 16px;
 
   }
 
   #footer-left {
+    padding: 8px 0;
     background-color: var(--green);
     @include md {
       grid-area: fl;
@@ -26,6 +28,7 @@ footer{
   }
 
   #footer-right {
+    padding: 8px 0;
     background-color: var(--green);
     @include md {
       grid-area: fr;
