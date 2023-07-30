@@ -8,6 +8,15 @@ footer{
     padding-bottom: 8px;
   }
 
+  .colorLink:link, .colorLink:visited {
+    color: var(--darkgreen);
+    text-decoration: none;
+    display: inline-block;
+  }
+  .colorLink:hover, .colorLink:active {
+      color: var(--white);
+  }
+
   @include md {
     display: grid;
     grid-template-columns: 50% auto;
@@ -38,6 +47,7 @@ footer{
 
   #footer-bottom {
     background-color: var(--darkgreen);
+    color: var(--lightgreen);
     @include md {
       grid-area: fb;
     }

@@ -15,50 +15,60 @@
 	<body>
 		<main class="content-grid" id="index">
 			<div class="content-grid-item">
-				<header>
-					<h1><a href="index.html">Alyssa Jordan</a></h1>
-					<p>UX Designer & Software Developer</p>
-					<nav>
+				<header class="header-grid">
+					<h1 id="logo"><a href="index.html">Alyssa Jordan</a></h1>
+					<!-- <p>UX Designer & Software Developer</p>-->
+
+					<section id="burger-container">
+						<button id="burger-btn">
+								<i class="fa-solid fa-bars"></i>
+						</button>
+				</section>
+
+					<nav id="main-menu">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="resume.html">Resume</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="associations.html">Associations</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="sitemap.html">Site Map</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#">Associations</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Site Map</a></li>
 						</ul>
 					</nav>
 				</header>
 
-				<div id="main-content-grid">
+				<div id="home-grid">
 					<section id="index-left">
-							<h1>“Good design is obvious. Great design is transparent.” - Joe Sparano</h1>
+							<article>
+									<h1>“Good design is obvious. Great design is transparent.” - Joe Sparano</h1>
+							</article>
 
+							<article id="home-me-grid">
+								<div id="profile-pic"></div>
+								<div>
+									<h2 >Alyssa Jordan</h2>
+									<p><i>UX Designer & Software Developer</i></p>
+									<p>I aim to be the bridge between development and design.</p>
+									<p>My UX/UI philosophy is to consider the user and their needs
+										above all else and at every step. Empathy is one of my core
+										principles as without it we end up forgetting the face
+										behind the screen. I believe we must have respect for our
+										users and never break their trust. Users need us to be their
+										advocates, and create design that promotes a better world.
+									</p>
+								</div>
+							</article>
 
-							<h2>Recent Projects</h2>
-							<ul>
-								<li>Community Projects Mobile Application Design Thinking Project</li>
-								<li>Netflix Visualization Project</li>
-							</ul>
+							<article id="projects">
+								<h2><a href="#">Recent Projects</a></h2>
+								<ul>
+									<li>Community Projects Mobile Application Design Thinking Project</li>
+									<li>Netflix Visualization Project</li>
+								</ul>
+							</article>
 
 						</section>
-
-					<aside id="main-content-right">
-							<div id="profile-pic"></div>
-							<!--<img src="img/profile.jpeg" alt="profile image">-->
-							<h2>Alyssa Jordan</h2>
-							<p>My purpose is to be the bridge between development and design.</p>
-							<p>My UX/UI philosophy is to consider the user and their needs above all
-								else and at every step. Empathy is one of my core principles as without
-								it we end up forgetting the face behind the screen. I believe we must
-								have respect for our users and never break their trust. Users need us
-								to be their advocates, and create design that promotes a better world.</p>
-								<ul>
-									<li><a href="https://www.linkedin.com/in/alyssa-jordan" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-									<li><a href="https://github.com/alyssaaj" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-								</ul>
-						</aside>
 				</div>
 
 				<footer>
@@ -68,10 +78,10 @@
 					</section>
 
 					<section id="footer-right">
-						<p><a href="" class="colorLink">XHTML validation</a></p>
-						<p><a href="" class="colorLink">CSS validation</a></p>
+						<p><a href="#" class="colorLink">XHTML validation</a></p>
+						<p><a href="#" class="colorLink">CSS validation</a></p>
 
-						<article>
+						<!--<article>
 							<label for="ptypes">Select Project Type:</label>
 							<select name="ptypes" id="ptypes">
 								<option value="all">All</option>
@@ -85,7 +95,7 @@
 								<input type="text" placeholder="Search...">
 								<button><i class="fa-solid fa-magnifying-glass"></i></button>
 							</form>
-						</article>
+						</article> -->
 					</section>
 
 					<section id="footer-bottom">

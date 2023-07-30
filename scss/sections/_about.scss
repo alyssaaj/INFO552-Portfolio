@@ -1,3 +1,26 @@
 /* =============
     About
 ============= */
+#about-left {
+
+  padding: 16px;
+
+  h1 {
+    padding-bottom: 24px;
+  }
+
+  h2 {
+    padding-bottom: 8px;
+  }
+
+  p {
+    padding-bottom: 8px;
+  }
+
+  ul {
+    li{
+      margin-left: 32px;
+    }
+  }
+
+}

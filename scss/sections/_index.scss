@@ -1,17 +1,24 @@
 /* =============
     Index
 ============= */
+#home-grid{
+    padding-top: 85px;
 
+}
 #index-left {
 
   padding: 16px;
 
   h1 {
-    padding-bottom: 24px;
+    padding: 120px 24px;
+    border: 8px solid var(--darkgreen);
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
+
   }
 
   h2 {
-    padding-bottom: 8px;
+    padding: 16px 0 8px 0;
   }
 
   p {
@@ -22,6 +29,52 @@
     li{
       margin-left: 32px;
     }
+  }
+
+  #home-me-grid {
+    border: 8px solid var(--green);
+    margin: 24px 0;
+    padding: 24px 16px;
+    display: inline-block;
+
+    @include lg {
+      display: grid;
+      grid-template-columns: 30% auto;
+
+    }
+  }
+
+  #profile-pic{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+
+  #projects {
+    border: 8px solid var(--lightgreen);
+    margin: 24px 0;
+    padding: 24px 16px;
+    h2 {
+      text-align: center;
+      padding: 24px 0;
+      a:link, a:visited {
+        color: var(--black);
+      }
+      a:hover, a:active {
+          color: var(--green);
+      }
+    }
+    ul{
+      li {
+        padding-bottom: 8px;
+      }
+    }
+
   }
 
 }

@@ -3,7 +3,7 @@
 ============= */
 
 body {
-  background-color: var(--gray);
+  background-color: var(--lightgray);
 }
 
 .content-grid {
@@ -26,6 +26,7 @@ a:link, a:visited {
 }
 
 #main-content-grid{
+  padding-top: 85px;
   @include lg {
     display: grid;
     grid-template-columns: 65% auto;
@@ -43,7 +44,8 @@ a:link, a:visited {
 }
 
 #main-content-right{
-  background-color: var(--cream);
+  background-color: var(--purple);
+  color: var(--darkpurple);
   text-align: center;
   padding: 24px 24px;
 
@@ -59,7 +61,7 @@ a:link, a:visited {
   }
 
   p {
-    padding-bottom: 8px;
+    padding-bottom: 16px;
   }
 
   //img{
@@ -78,7 +80,10 @@ a:link, a:visited {
       font-size: rem-calc(28);
       list-style: none;
       a:link, a:visited {
-        color: var(--black);
+        color: var(--darkpurple);
+      }
+      a:hover, a:active {
+          color: var(--white);
       }
     }
   }

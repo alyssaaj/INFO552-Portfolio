@@ -1,16 +1,77 @@
 /* =============
     Navigation
 ============= */
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.show-menu{
+    display: block !important;
+}
 
 nav {
   background: var(--green);
-  ul {
-    li {
-      list-style: none;
-    }
+  ul{
+      padding: 0;
+      margin: 0;
+      li{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+      }
   }
+  display: none;
+
+    @include lg{
+        display: block;
+    }
+    ul{
+
+        @include lg{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        li{
+            text-align: right;
+
+            @include lg{
+                margin-left: 16px;
+            }
+
+            a:link, a:visited{
+                display: inline-block;
+                color: black;
+                padding: 16px 0 16px;
+
+                @include lg{
+                    padding: 16px 12px;
+                    border: 1px solid var(--white);
+                    color: var(--white);
+                    border-radius: 6px;
+                    transition: 0.25s;
+                }
+
+                &:hover, &:active{
+                    @include lg{
+                        background-color: var(--white);
+                        color: var(--gray);
+                    }
+                }
+            }
+        }
+    }
 }
-// link colors
+
+
+
+
+/*// link colors
 .colorLink:link, .colorLink:visited {
   color: var(--cream);
   text-decoration: none;
@@ -18,4 +79,4 @@ nav {
 }
 .colorLink:hover, .colorLink:active {
     color: var(--gray);
-}
+}*/
