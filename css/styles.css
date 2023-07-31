@@ -847,14 +847,16 @@ footer #footer-bottom {
 #about-left h1 {
   padding-bottom: 24px;
 }
-#about-left h2 {
-  padding-bottom: 8px;
+#about-left h3 {
+  padding: 16px 0 8px 0;
 }
 #about-left p {
   padding-bottom: 8px;
 }
 #about-left ul li {
   margin-left: 32px;
+  padding-bottom: 8px;
+  font-family: "Raleway", sans-serif;
 }
 
 /* =============
@@ -865,6 +867,10 @@ footer #footer-bottom {
 }
 #resume-left h1 {
   padding-bottom: 24px;
+  padding-right: 8px;
+}
+#resume-left #down-icon {
+  font-size: 1.25rem;
 }
 #resume-left h2 {
   padding: 8px 0;
@@ -939,3 +945,25 @@ footer #footer-bottom {
 /* =============
     Contact
 ============= */
+#contact-left {
+  padding: 16px;
+}
+#contact-left h1 {
+  padding-bottom: 24px;
+}
+#contact-left h3 {
+  padding-bottom: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+#contact-left ul li {
+  list-style: none;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+#contact-left a:link, #contact-left a:visited {
+  color: var(--darkgreen);
+}
+#contact-left a:hover, #contact-left a:active {
+  color: var(--green);
+}
