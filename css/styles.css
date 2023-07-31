@@ -368,7 +368,7 @@ a:link, a:visited {
 }
 
 #main-content-grid {
-  padding-top: 85px;
+  padding-top: 84px;
 }
 @media (min-width: 1024px) {
   #main-content-grid {
@@ -393,6 +393,8 @@ a:link, a:visited {
 }
 
 #main-content-right {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   background-color: var(--purple);
   color: var(--darkpurple);
   text-align: center;
@@ -413,6 +415,7 @@ a:link, a:visited {
 }
 #main-content-right h2 {
   padding: 8px 0;
+  font-family: "Open Sans", sans-serif;
 }
 #main-content-right ul {
   display: -webkit-box;
@@ -548,7 +551,7 @@ nav ul li {
 }
 nav ul li a:link, nav ul li a:visited {
   display: inline-block;
-  color: black;
+  color: white;
   padding: 16px 0 16px;
 }
 @media (min-width: 1024px) {
@@ -556,15 +559,15 @@ nav ul li a:link, nav ul li a:visited {
     padding: 16px 12px;
     border: 1px solid var(--white);
     color: var(--white);
-    border-radius: 6px;
+    border-radius: 24px;
     -webkit-transition: 0.25s;
     transition: 0.25s;
   }
 }
 @media (min-width: 1024px) {
   nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
-    background-color: var(--white);
-    color: var(--gray);
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
   }
 }
 
@@ -908,6 +911,28 @@ footer #footer-bottom {
 /* =============
     Projects
 ============= */
+#projects-left {
+  padding: 16px;
+}
+#projects-left h1 {
+  padding-bottom: 24px;
+}
+#projects-left h2 {
+  padding: 8px 0;
+}
+#projects-left h4 {
+  padding: 8px 0;
+  margin-left: 16px;
+}
+#projects-left p {
+  padding-bottom: 8px;
+}
+#projects-left ul li {
+  margin-left: 40px;
+  padding-bottom: 8px;
+  list-style: none;
+}
+
 /* =============
     Associations
 ============= */
@@ -953,8 +978,6 @@ footer #footer-bottom {
 }
 #contact-left h3 {
   padding-bottom: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
 }
 #contact-left ul li {
   list-style: none;
