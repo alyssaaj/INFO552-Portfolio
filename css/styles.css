@@ -832,10 +832,10 @@ footer #footer-bottom {
   padding: 24px 0;
 }
 #index-left #projects h2 a:link, #index-left #projects h2 a:visited {
-  color: var(--black);
+  color: var(--green);
 }
 #index-left #projects h2 a:hover, #index-left #projects h2 a:active {
-  color: var(--green);
+  color: var(--darkgreen);
 }
 #index-left #projects ul li {
   padding-bottom: 8px;
@@ -859,7 +859,15 @@ footer #footer-bottom {
 #about-left ul li {
   margin-left: 32px;
   padding-bottom: 8px;
-  font-family: "Raleway", sans-serif;
+}
+#about-left iframe {
+  padding: 24px 16px;
+}
+#about-left a:link, #about-left a:visited {
+  color: var(--green);
+}
+#about-left a:hover, #about-left a:active {
+  color: var(--darkgreen);
 }
 
 /* =============
@@ -932,6 +940,14 @@ footer #footer-bottom {
   padding-bottom: 8px;
   list-style: none;
 }
+#projects-left a:link, #projects-left a:visited {
+  color: var(--green);
+  text-decoration: none;
+  display: inline-block;
+}
+#projects-left a:hover, #projects-left a:active {
+  color: var(--darkgreen);
+}
 
 /* =============
     Associations
@@ -985,8 +1001,8 @@ footer #footer-bottom {
   padding-left: 24px;
 }
 #contact-left a:link, #contact-left a:visited {
-  color: var(--darkgreen);
+  color: var(--green);
 }
 #contact-left a:hover, #contact-left a:active {
-  color: var(--green);
+  color: var(--darkgreen);
 }

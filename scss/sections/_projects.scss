@@ -28,7 +28,16 @@
       padding-bottom: 8px;
       list-style: none;
 
+
     }
+  }
+  a:link, a:visited {
+    color: var(--green);
+    text-decoration: none;
+    display: inline-block;
+  }
+  a:hover, a:active {
+      color: var(--darkgreen);
   }
 
 }

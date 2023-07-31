@@ -21,8 +21,17 @@
     li{
       margin-left: 32px;
       padding-bottom: 8px;
-      font-family: "Raleway", sans-serif;
     }
   }
 
+  iframe {
+    padding: 24px 16px;
+  }
+
+  a:link, a:visited {
+    color: var(--green);
+  }
+  a:hover, a:active {
+      color: var(--darkgreen);
+  }
 }
