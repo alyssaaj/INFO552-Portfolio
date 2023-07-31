@@ -905,6 +905,37 @@ footer #footer-bottom {
 /* =============
     Associations
 ============= */
+#associations-left {
+  padding: 16px;
+}
+#associations-left h1 {
+  padding-bottom: 16px;
+}
+#associations-left h2 {
+  text-align: center;
+}
+#associations-left #org-grid {
+  border: 8px solid var(--lightgreen);
+  margin: 16px;
+  padding: 16px;
+  gap: 16px;
+  display: inline-block;
+}
+#associations-left #org-grid img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #associations-left #org-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+        grid-template-areas: "b i" "u d";
+  }
+}
+
 /* =============
     Contact
 ============= */

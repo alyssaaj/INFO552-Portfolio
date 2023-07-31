@@ -1,3 +1,36 @@
 /* =============
     Associations
 ============= */
+#associations-left {
+  padding: 16px;
+
+  h1 {
+    padding-bottom: 16px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  #org-grid {
+    border: 8px solid var(--lightgreen);
+    margin: 16px;
+    padding: 16px;
+    gap: 16px;
+    display:inline-block;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include md {
+      display: grid;
+      grid-template-columns: 50% auto;
+      grid-template-areas:
+        "b i"
+        "u d";
+    }
+  }
+}
