@@ -742,6 +742,9 @@ footer #footer-right {
   padding: 8px 0;
   background-color: var(--green);
 }
+footer #footer-right img {
+  padding-top: 8px;
+}
 @media (min-width: 768px) {
   footer #footer-right {
     grid-area: fr;
