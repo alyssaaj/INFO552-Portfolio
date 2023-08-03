@@ -36,10 +36,12 @@
     margin: 24px 0;
     padding: 24px 16px;
     display: inline-block;
+    text-align: center;
 
     @include lg {
       display: grid;
       grid-template-columns: 30% auto;
+      text-align: left;
 
     }
   }

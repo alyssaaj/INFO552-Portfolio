@@ -586,8 +586,8 @@ nav ul li a:link, nav ul li a:visited {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto;
-  grid-template-columns: 50% auto;
+  -ms-grid-columns: 80% auto;
+  grid-template-columns: 80% auto;
       grid-template-areas: "logo burger" "nav nav";
   padding: 16px;
   position: fixed;
@@ -806,6 +806,7 @@ footer #footer-bottom {
   margin: 24px 0;
   padding: 24px 16px;
   display: inline-block;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   #index-left #home-me-grid {
@@ -813,6 +814,7 @@ footer #footer-bottom {
     display: grid;
     -ms-grid-columns: 30% auto;
     grid-template-columns: 30% auto;
+    text-align: left;
   }
 }
 #index-left #profile-pic {
@@ -864,7 +866,7 @@ footer #footer-bottom {
   padding-bottom: 8px;
 }
 #about-left iframe {
-  padding: 24px 16px;
+  padding: 24px 0;
 }
 #about-left a:link, #about-left a:visited {
   color: var(--green);
@@ -915,10 +917,36 @@ footer #footer-bottom {
 #resume-left a:hover, #resume-left a:active {
   color: var(--darkgreen);
 }
+#resume-left .degree {
+  list-style: none;
+}
 
 /* =============
     Site Map
 ============= */
+#sitemap-left {
+  padding: 16px;
+}
+#sitemap-left h1 {
+  padding-bottom: 24px;
+}
+#sitemap-left ul {
+  list-style: none;
+}
+#sitemap-left ul li {
+  margin-left: 24px;
+  padding-bottom: 8px;
+}
+#sitemap-left ul ul li {
+  margin-left: 40px;
+}
+#sitemap-left a:link, #sitemap-left a:visited {
+  color: var(--green);
+}
+#sitemap-left a:hover, #sitemap-left a:active {
+  color: var(--darkgreen);
+}
+
 /* =============
     Projects
 ============= */
